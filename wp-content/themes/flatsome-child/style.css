@@ -5,3 +5,286 @@ Author: UX Themes
 Template: flatsome
 Version: 3.0
 */
+@import url("style-typography.css");
+
+.header-nav-main a.nav-top-link {
+  font-family: "DiavloBook-Regular", Arial !important;
+}
+.title-heading .section-title-main {
+  font-size: 40px;
+  background: linear-gradient(90deg, #ff4b81, #8e1f92);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-footer {
+  background: linear-gradient(180deg, #ff4b81 0%, #8e1f92 100%);
+  color: #fff;
+}
+.section-footer .ux_logo {
+  transform: translateY(100%);
+}
+.section-footer .title-footer span {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  color: #fff;
+}
+.section-footer a {
+  color: #fff;
+}
+.section-footer img.alignnone {
+  filter: invert(1);
+}
+.section-footer .ux-menu-link:hover .ux-menu-link__link {
+  color: #fff !important;
+}
+.title-heading {
+  margin-bottom: 50px;
+}
+.section-title b {
+  opacity: 0;
+}
+.section-news h2.section-title::before,
+.section-partner h2.section-title::before,
+.section-timeline h2.section-title::before {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  font-size: 96px;
+  line-height: 106px;
+  color: transparent;
+  -webkit-text-stroke: 1px #eddcab4d;
+  text-transform: uppercase;
+  z-index: -1;
+}
+/* Home */
+.section-video .mb {
+  margin-bottom: 0;
+}
+.section-video p {
+  margin-bottom: 0;
+}
+.follow-icon-home {
+  margin-top: -90px;
+  margin-left: -30px;
+}
+.follow-icon-home a {
+  color: #fff;
+}
+.section-about-us {
+  margin-top: -20px;
+}
+.section-about-us h1 {
+  font-size: 40px;
+}
+.section-about-us .des-about-us {
+  /* background: áp dụng gradient.
+-webkit-background-clip: text: chỉ lấy phần nền hiển thị trong phần chữ.
+-webkit-text-fill-color: transparent: làm màu chữ trong suốt để hiện gradient. */
+  font-size: 30px;
+  background: linear-gradient(90deg, #ff4b81, #8e1f92);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-rules-res .banner {
+  border-radius: 15px;
+}
+.section-rules-res .banner-bg.fill {
+  border-radius: 15px;
+}
+.section-rules-res img {
+  border-radius: 15px;
+}
+.section-rules-res h3 {
+  font-size: 26px;
+  font-weight: 600;
+  height: 68px;
+}
+.section-rules-res .white.is-outline:hover {
+  background: linear-gradient(90deg, #ff4b81, #8e1f92);
+}
+.section-rules-res .white.is-outline:hover span,
+.section-rules-res .white.is-outline:hover i {
+  color: #fff;
+}
+/*  */
+.section-timeline,
+.section-news,
+.section-partner {
+  padding-top: 85px !important;
+  /* padding-bottom: 0!important; */
+}
+
+.section-timeline h2.section-title::before {
+  content: "Timeline";
+  transform: translate(-19%, -50%);
+}
+
+/* Road Map */
+.content-home-timeline {
+  display: flex;
+  justify-content: space-between;
+  height: 378px;
+  padding: 20px 0 16px;
+  background-image: url("../../uploads/2025/05/line-timeline.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-home-timeline .row {
+  width: 170px !important;
+}
+.home-timeline-item {
+  padding: 0 12px;
+}
+.home-timeline-item p {
+  margin-bottom: 0;
+}
+.home-timeline-item .col-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 170px;
+}
+.col.home-timeline-item.even .col-inner {
+  margin-top: 160px;
+}
+
+.date-home-timeline {
+  position: relative;
+  padding: 12px 16px;
+  font-size: 18px;
+  color: #333;
+  background: #fff;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-weight: bold;
+}
+.date-home-timeline::before {
+  content: "";
+  position: absolute;
+  bottom: calc(-100% - 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../../uploads/2025/05/icon-home-timeline.svg");
+  width: 18px;
+  height: 46px;
+}
+.name-home-timeline {
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #ff4b81, #8e1f92);
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+/* News */
+.section-news h2.section-title::before {
+  content: "tin tức sự kiện";
+  transform: translate(-50%, -50%);
+}
+.section-news .row .col.large-12 {
+  padding-bottom: 0px;
+}
+/* Partner */
+.section-partner h2.section-title::before {
+  content: "đơn vị tổ chức";
+  transform: translate(-34%, -50%);
+}
+.section-partner .image-cover {
+  background-color: #ad1f63;
+}
+.section-partner .box-text.text-left {
+  vertical-align: top;
+}
+
+/* PAGE THỂ LỆ */
+/* .gap-16 {
+  gap: 12px;
+}
+.mb-16 {
+  margin-bottom: 16px !important;
+} */
+
+.d-flex {
+  display: flex !important
+;
+}
+.header-contest-rules-item h4 {
+  display: inline-block; /* Để h4 co theo nội dung */
+  padding: 10px 16px; /* Giữ nếu bạn vẫn muốn có khoảng cách trong */
+  margin: 0;
+  background: linear-gradient(90deg, #ff4b81, #8e1f92);
+  font-size: 16px;
+  max-width: none; /* Xóa giới hạn chiều rộng */
+  width: auto;
+  color: #fff;
+}
+.header-contest-rules-item p {
+  margin-left: 10px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  color: #333;
+  font-weight: bold;
+}
+img.size-full.alignnone {
+  margin-bottom: 0em;
+}
+
+/*  */
+.section-award .border-top {
+  border-top: 1px solid #ad1f63;
+}
+.section-award p,
+.section-award ul,
+.section-award ul li {
+  margin-bottom: 0;
+}
+.section-award .col-inner .text {
+  padding-left: 10px;
+}
+.section-award .border-left {
+  border-left: 1px solid #ad1f63;
+}
+.section-award h2 span {
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .section-footer .ux_logo {
+    transform: translate(75%, 0%);
+  }
+  .section-partner h2.section-title::before,
+  .section-news h2.section-title::before,
+  .section-timeline h2.section-title::before {
+    content: "";
+  }
+  .title-heading {
+    margin-bottom: 20px;
+  }
+  .section-timeline,
+  .section-news,
+  .section-partner {
+    padding-top: 15px !important;
+  }
+  .content-home-timeline {
+    background-image: unset;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 10px;
+  }
+  .col.home-timeline-item.even .col-inner {
+    margin-top: 0;
+  }
+  .title-heading .section-title-main {
+    font-size: 35px;
+  }
+  .section-partner .row-collapse {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Diavlo-Medium";
+  src: url("./fonts/Diavlo-Medium.eot");
+  src: url("./fonts/Diavlo-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Diavlo-Medium.woff") format("woff"),
+    url("./fonts/Diavlo-Medium.ttf") format("truetype"),
+    url("./fonts/Diavlo-Medium.svg#svgFontName") format("svg");
+}
+
+@font-face {
+  font-family: "diavlo_book";
+  src: url("./fonts/diavlo_book.woff") format("woff"),
+    url("./fonts/diavlo_book.ttf") format("truetype"),
+    url("./fonts/diavlo_book.svg#diavlo_book") format("svg");
+}
+
+@font-face {
+  font-family: "DiavloLight";
+  src: url("./fonts/DiavloLight.eot");
+  src: url("./fonts/DiavloLight.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/DiavloLight.woff") format("woff"),
+    url("./fonts/DiavloLight.ttf") format("truetype"),
+    url("./fonts/DiavloLight.svg#DiavloLight") format("svg");
+}
+
+@font-face {
+  font-family: "DiavloBook-Regular";
+  src: url("./fonts/DiavloBook-Regular.eot");
+  src: url("./fonts/DiavloBook-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/DiavloBook-Regular.woff") format("woff"),
+    url("./fonts/DiavloBook-Regular.ttf") format("truetype"),
+    url("./fonts/DiavloBook-Regular.svg#DiavloBook-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DiavloBook-Regular", Arial!important;
+}
+
