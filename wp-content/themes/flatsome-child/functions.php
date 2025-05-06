@@ -1,4 +1,6 @@
 <?php
+    include get_stylesheet_directory() . '/inc/shortcodes/title-blog-post.php';
+
 // Add class even for timeline
 function addClassTimeline()
 {

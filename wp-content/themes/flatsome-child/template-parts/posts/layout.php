@@ -15,7 +15,6 @@ do_action('flatsome_before_blog');
 } ?>
 <div class="row align-center">
 	<div class="large-10 col custom-single-blog">
-		<!-- Call my shortcode -->
 		<?php echo do_shortcode('[post_info]');?>
 		<?php if (!is_single() && get_theme_mod('blog_featured', '') == 'content') {
 			get_template_part('template-parts/posts/featured-posts');

@@ -5,19 +5,27 @@ Author: UX Themes
 Template: flatsome
 Version: 3.0
 */
-@import url("style-typography.css");
+/* @import url("style-typography.css");
 
 .header-nav-main a.nav-top-link {
   font-family: "DiavloBook-Regular", Arial !important;
-}
+} */
 .title-heading .section-title-main {
   font-size: 40px;
   background: linear-gradient(90deg, #ff4b81, #8e1f92);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.section-footer {
+.header-main {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: all 1s ease;
+}
+.section-footer,
+.absolute-footer {
   background: linear-gradient(180deg, #ff4b81 0%, #8e1f92 100%);
+  color: #fff;
+}
+.absolute-footer .copyright-footer {
   color: #fff;
 }
 .section-footer .ux_logo {
@@ -58,6 +66,43 @@ Version: 3.0
   -webkit-text-stroke: 1px #eddcab4d;
   text-transform: uppercase;
   z-index: -1;
+}
+.date-custom {
+  font-size: 14px;
+  color: #333;
+}
+.divider-full {
+  max-width: 95%;
+  position: relative;
+  height: 1px;
+}
+.divider-full::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 1px;
+  width: 24px;
+  background-color: #ad1f63;
+}
+.date-custom i {
+  color: #ad1f63;
+  margin-right: 5px;
+}
+.post-item .box-image {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.post-item .col-inner,
+.post-item .box-blog-post {
+  border-radius: 12px;
+}
+.custom-single-blog {
+  padding: 40px 96px;
+  background: #fff;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.title-single-post {
+  font-size: 26px;
 }
 /* Home */
 .section-video .mb {
@@ -101,6 +146,7 @@ Version: 3.0
   font-size: 26px;
   font-weight: 600;
   height: 68px;
+  line-height: 36px !important;
 }
 .section-rules-res .white.is-outline:hover {
   background: linear-gradient(90deg, #ff4b81, #8e1f92);
@@ -192,8 +238,13 @@ Version: 3.0
   content: "đơn vị tổ chức";
   transform: translate(-34%, -50%);
 }
+
 .section-partner .image-cover {
   background-color: #ad1f63;
+  height: 290px;
+}
+.section-partner .box-text.text-center {
+  height: 290px;
 }
 .section-partner .box-text.text-left {
   vertical-align: top;
@@ -208,8 +259,7 @@ Version: 3.0
 } */
 
 .d-flex {
-  display: flex !important
-;
+  display: flex;
 }
 .header-contest-rules-item h4 {
   display: inline-block; /* Để h4 co theo nội dung */
@@ -246,13 +296,70 @@ img.size-full.alignnone {
 .section-award .col-inner .text {
   padding-left: 10px;
 }
-.section-award .border-left {
-  border-left: 1px solid #ad1f63;
+.section-award .border-left::after {
+  content: "";
+  height: 50px;
+  width: 1px;
+  background-color: #ad1f63;
+  position: absolute;
+  top: 0%;
+  transform: translateY(50%);
 }
 .section-award h2 span {
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
+}
+.section-award .row.row-small > .col {
+  padding: 0;
+}
+.section-award .row.row-small h2 {
+  margin-bottom: 0;
+}
+.section-award .row.row-small h2 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-award .col-inner .text {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="url"],
+.wpcf7 input[type="file"],
+.wpcf7 textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.wpcf7-spinner {
+  display: none;
+}
+.form-res-exam .col {
+  display: flex;
+  align-items: center;
+}
+.form-flat-wrapper p {
+  width: 100%;
+}
+.section-form-res .form-flat-wrapper,
+.section-form-res .col-inner {
+  padding: 18px;
+}
+.section-form-res .col-inner p {
+  font-size: 14px;
+}
+.section-video .is-divider {
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .section-footer .ux_logo {
@@ -286,5 +393,41 @@ img.size-full.alignnone {
   }
   .section-partner .row-collapse {
     padding: 0 15px;
+  }
+  .home-timeline-item {
+    padding: 0;
+  }
+  .section-partner .box-text.text-center {
+    max-height: 150px; /* hoặc chiều cao bạn muốn */
+  }
+  .section-partner .box-text.text-center .box-text-inner {
+    max-height: 150px; /* hoặc chiều cao bạn muốn */
+    overflow: hidden; /* ẩn phần vượt quá */
+    text-overflow: ellipsis; /* tùy chọn: thêm dấu "..." nếu 1 dòng */
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* số dòng muốn hiển thị */
+    -webkit-box-orient: vertical;
+  }
+  .header-contest-rules-item {
+    flex-wrap: wrap;
+  }
+  .header-contest-rules-item h4 {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .header-contest-rules-item p {
+    margin-left: 0;
+  }
+  .section-award .border-left::after {
+    display: none;
+  }
+  .section-award .col-inner .text {
+    height: auto;
+    padding: 10px 0;
+  }
+  .icon-center {
+    display: flex;
+    justify-content: center;
   }
 }
